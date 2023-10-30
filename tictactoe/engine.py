@@ -50,9 +50,9 @@ class Engine:
             return min_eval, best_move
 
     def evaluate_board(self, board: Board, depth: int) -> Score:
-        if board.winner() == self.ai:
+        if board.winner() == self.foe:
             return board.size**2 - depth
-        elif board.winner() == self.foe:
+        elif board.winner() == self.ai:
             return -1 * board.size**2 - depth
         return 0
 
