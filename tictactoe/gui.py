@@ -92,10 +92,10 @@ class Gui:
         if self.board.is_draw():
             self.display_text("Draw!", 50, 'center', WINDOW_WIDTH - 50)
         elif self.board.winner() == Symbol.CIRCLE:
-            self.display_text("Newbie Wins!", 50, 'center',
+            self.display_text("Newbie Looses!", 50, 'center',
                               WINDOW_WIDTH - MARGIN + 10)
         elif self.board.winner() == Symbol.CROSS:
-            self.display_text("Batman Wins!", 50, 'center',
+            self.display_text("Batman Looses!", 50, 'center',
                               WINDOW_WIDTH - MARGIN + 10)
         else:
             if self.board.turn == Symbol.CIRCLE:
